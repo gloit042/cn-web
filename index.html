@@ -9,18 +9,22 @@
 <body>
 <div id="app">
     <div class="container">
-        <div class="col-md-4 left">
+        <div class="col-md-3 left">
             <div id="avatar-frame">
                 <div id="avatar">
                     <img src="./pic/photo_2017-05-26_12-19-38.jpg">
                 </div>
             </div>
+            <div class="name">{{ myName }}</div>
         </div>
+        <div class="col-md-1"></div>
         <div class="col-md-8">
-            <h1>{{ myName }}</h1>
             <div id="introduction-frame">
                 <div id="introduction">
-                    这是一个个人主页
+                    {{ word }}
+                </div>
+                <div id="author">
+                    {{ by }}
                 </div>
             </div>
         </div>
