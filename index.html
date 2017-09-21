@@ -5,10 +5,12 @@
     <script src="./vue.min.js"></script>
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <title>Homepage of Gloit</title>
 </head>
 <body>
 <div id="app">
-    <div class="container">
+    <div class="container" style="height: 62%;">
         <div class="col-md-3 left">
             <div id="avatar-frame">
                 <div id="avatar">
@@ -16,18 +18,29 @@
                 </div>
             </div>
             <div class="name">{{ myName }}</div>
+            <div class="mail">{{ mailSuffix}}</div>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-8">
             <div id="introduction-frame">
                 <div id="introduction">
+                    <i class="fa fa-quote-left quote"></i>
                     {{ word }}
+                    <i class="fa fa-quote-right quote"></i>
                 </div>
                 <div id="author">
                     {{ by }}
                 </div>
             </div>
         </div>
+    </div>
+    <div class="item-display">
+        <a class="item" title="USTC LUG" href="https://www.ustclug.org">
+            <img src="./img/LUG2.png">
+        </a>
+        <a class="item" title="To my github" href="https://github.com/gloit042">
+            <img src="https://octodex.github.com/images/original.png">
+        </a>
     </div>
 </div>
 <script src="./js/main.js"></script>

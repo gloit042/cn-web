@@ -22,41 +22,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #avatar {
-    width: 220px;
-    height: 220px;
     margin-left: 18px;
-    padding: 0;
-    background: #95a5a6;
-    border-radius: 110px;
 }
 
 #avatar img {
     width: 200px;
-    border-radius: 100px;
+    border-radius: 10px;
     margin-left:10px;
     margin-top: 10px;
 }
 
 #avatar-frame {
-    margin-top: 30%;
+    margin-top: 20%;
     margin-left:auto;
     margin-right: auto;
 }
 
 .name {
     font-family: 'Microsoft YaHei', 'SimSun', 'WenQuanYi Micro Hei Light';
-    margin-top: 0.5em;
+    margin-top: 0.3em;
     text-align: center;
     font-size: 35px;
     font-weight:400;
     color:#ecf0f1;
 }
 
+.mail{
+    text-align: center;
+    font-size: 18px;
+    color: lightgray;
+}
+
 #introduction-frame {
     color: white;
     font-family:Georgia, serif;
     margin-top: 20%;
-    height: 600px;
+    height: 300px;
     background: #27ae60;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -67,12 +68,50 @@ h1, h2, h3, h4, h5, h6 {
 
 #introduction {
     color: inherit;
-    margin-top: 10%;
-    font-size: 50px;
+    font-size: 40px;
 }
 #author {
     corlor: inherit;
     margin-top: 10%;
-    font-size: 30px;
+    font-size: 25px;
     text-align: right;
+}
+
+.quote {
+    color: white;
+    opacity: 0.4;
+}
+
+.item-display {
+    height:38%;
+    width: 100%;
+    background-color:#34495E ;
+    text-align: center;
+    padding-top:3%;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition:  time;
+    margin: 0 40px 0 40px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.item img, item svg {
+    width: 192px;
+    height: 192px;
+    border-radius: 96px;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    opacity:0.66;
 }

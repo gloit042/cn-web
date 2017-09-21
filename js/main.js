@@ -1,4 +1,4 @@
-word = 'Do not multiply entities beyond necessity'
+word = 'Do not multiply entities beyond necessity.'
 by = '-- William of Occam'
 
 new Vue({
@@ -6,7 +6,8 @@ new Vue({
   data: function () {
     return {
       message: 'Hello',
-      myName: '李嘉豪',
+      myName: 'gloit',
+      mailSuffix: '@ustclug.org',
       word: word,
       by: by
     }
